@@ -1,0 +1,16 @@
+[tools]
+bun = "latest"
+claude = "latest"
+node = "22"
+python = "3.14"
+uv = "latest"
+neovim = "latest"
+fzf = "latest"
+fd = "latest"
+ripgrep = "latest"
+xh = "latest"
+
+[settings]
+env_file = '.env'
+experimental = true
+lockfile = true

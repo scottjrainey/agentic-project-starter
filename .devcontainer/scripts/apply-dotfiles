@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Default values – override via env if you want
+: "${DEVCONTAINER_DOTFILES_REPO:=git@github.com:scottjrainey-agentics/mise-agentic-devcontainer-dotfiles.git}"
+: "${DEVCONTAINER_DOTFILES_TARGET:=$HOME/.dotfiles}"
+: "${DEVCONTAINER_DOTFILES_INSTALL:=$DEVCONTAINER_DOTFILES_TARGET/install.sh}"
+
+echo "Applying dotfiles from: $DEVCONTAINER_DOTFILES_REPO"
+
+# Always start from a clean slate (ensures it can be overwritten)
+rm -rf "$DEVCONTAINER_DOTFILES_TARGET"
+
+git clone "$DEVCONTAINER_DOTFILES_REPO" "$DEVCONTAINER_DOTFILES_TARGET"
+
+# Run install script if present
+if [ -x "$DEVCONTAINER_DOTFILES_INSTALL" ]; then
+  echo "Running dotfiles install script: $DEVCONTAINER_DOTFILES_INSTALL"
+  "$DEVCONTAINER_DOTFILES_INSTALL"
+else
+  echo "No executable install script found at $DEVCONTAINER_DOTFILES_INSTALL; skipping."
+fi

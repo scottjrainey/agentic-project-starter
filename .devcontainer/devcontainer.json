@@ -1,0 +1,72 @@
+{
+  "name": "Mise Ubuntu Agentic Devcontainer",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "hostname": "blog-devcontainer",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": true,
+      "installOhMyZsh": true,
+      "installOhMyZshConfig": true,
+      "configureZshAsDefaultShell": true,
+      "upgradePackages": true
+    },
+    "ghcr.io/devcontainers-extra/features/zsh-plugins:0": {
+      "omzPlugins": "https://github.com/zsh-users/zsh-autosuggestions"
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest",
+      "dockerDashComposeVersion": "v2"
+    },
+    "ghcr.io/devcontainers-extra/features/mise:1": {}
+  },
+  "remoteUser": "vscode",
+  "remoteEnv": {
+    "SSH_AUTH_SOCK": "${localEnv:SSH_AUTH_SOCK}"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.profiles.linux": {
+          "zsh": {
+            "path": "/usr/bin/zsh"
+          }
+        }
+      },
+      "extensions": [
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "postCreateCommand": ".devcontainer/scripts/apply-dotfiles && .devcontainer/scripts/setup",
+  "runArgs": [
+    "--publish=8787:8787",
+    "--publish=8001:8001",
+    "--publish=49312:49312",
+    "--hostname",
+    "blog.devpod"
+  ],
+  "mounts": [
+    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,readonly,type=bind",
+    "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+  ],
+  "forwardPorts": [
+    8787,
+    8001,
+    49312
+  ],
+  "portsAttributes": {
+    "8787": {
+      "label": "Main Dev Server (Wrangler/Astro)",
+      "onAutoForward": "openBrowser"
+    },
+    "8001": {
+      "label": "ADW Webhook Server",
+      "onAutoForward": "silent"
+    },
+    "49312": {
+      "label": "Cloudflared Metrics",
+      "onAutoForward": "silent"
+    }
+  }
+}

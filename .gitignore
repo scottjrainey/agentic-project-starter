@@ -1,0 +1,59 @@
+# Protect env.* variables, but allow sample files
+**/.env*
+!**/.env*.sample
+.run/
+
+# AI documentation - ignore all except README
+ai_docs/*
+!ai_docs/README.md
+
+# Cache files (if you ever use an external cache dir)
+.cache/
+
+# --------------------------------------------------------
+# Node / Tailwind / PostCSS
+# --------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# lockfiles are usually committed — comment these out if you don’t want to share
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# --------------------------------------------------------
+# Python
+# --------------------------------------------------------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual envs
+.venv/
+venv/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# --------------------------------------------------------
+# OS / Editor cruft
+# --------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+*.bak
+
+# VSCode / JetBrains IDE
+.vscode/
+.idea/
+
