@@ -8,8 +8,3 @@ sudo DEBIAN_FRONTEND=noninteractive rm -rf /var/lib/apt/lists/*
 # Install mise packages
 mise trust 2>&1
 mise install 2>&1
-
-# Symlink mise.toml and mise.lock in ~/
-# Allows use of mise-installled tooling from mise being activated in ~/
-ln -sf "$PWD/mise.toml" "$HOME/.mise.toml" && mise trust "$HOME/.mise.toml" 2>&1
-ln -sf "$PWD/mise.lock" "$HOME/.mise.lock" && mise trust "$HOME/.mise.lock" 2>&1
