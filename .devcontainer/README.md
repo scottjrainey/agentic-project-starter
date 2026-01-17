@@ -1,6 +1,6 @@
 # Development Container Configuration
 
-This devcontainer provides a fully-configured Ubuntu 24.04 development environment with mise-based tooling for the blog project and AI Developer Workflow (ADW) system.
+Agentic project tooling and environment
 
 ## Features
 
@@ -24,7 +24,7 @@ This devcontainer provides a fully-configured Ubuntu 24.04 development environme
 
 The devcontainer automatically runs on creation:
 
-1. **apply-dotfiles** - Clones and applies custom dotfiles from `scottjrainey-agentics/mise-agentic-devcontainer-dotfiles`
+1. **apply-dotfiles** - Clones and applies dotfiles from `scottjrainey/dotfiles`
 2. **setup** - Installs tmux and runs `mise trust && mise install` to install all project tools
 
 ## Customization
@@ -50,15 +50,3 @@ The devcontainer automatically installs:
 - **scripts/apply-dotfiles** - Clones dotfiles repository and runs install script
 - **scripts/setup** - Installs system packages and mise tools
 
-## Usage
-
-The container is ready to use after creation. All project commands work as documented in the main README.md:
-
-```bash
-# Start the application
-mise run start
-
-# Run ADW workflows
-cd adws/
-uv run adw_plan_build_iso.py 123
-```
