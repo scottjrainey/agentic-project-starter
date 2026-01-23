@@ -1,6 +1,6 @@
 # Development Container Configuration
 
-Agentic project tooling and environment
+This devcontainer provides a fully-configured Ubuntu 24.04 development environment with mise-based tooling.
 
 ## Features
 
@@ -24,7 +24,7 @@ Agentic project tooling and environment
 
 The devcontainer automatically runs on creation:
 
-1. **apply-dotfiles** - Clones and applies dotfiles from `scottjrainey/dotfiles`
+1. **apply-dotfiles** - Clones and applies custom dotfiles defaulting to `scottjrainey/dotfiles`
 2. **setup** - Installs tmux and runs `mise trust && mise install` to install all project tools
 
 ## Customization
@@ -50,3 +50,6 @@ The devcontainer automatically installs:
 - **scripts/apply-dotfiles** - Clones dotfiles repository and runs install script
 - **scripts/setup** - Installs system packages and mise tools
 
+## Usage
+
+The container is ready to use after creation. All project commands work as documented in the main README.md.
