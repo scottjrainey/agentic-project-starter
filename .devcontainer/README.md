@@ -8,7 +8,8 @@ This devcontainer provides a fully-configured Ubuntu 24.04 development environme
 
 - **Ubuntu 24.04** with Docker-in-Docker support
 - **Zsh** as default shell with Oh My Zsh and autosuggestions
-- **mise** for tool version management (bun, python, uv, wrangler, etc.)
+- **mise** for tool version management (bun, node, python, uv, claude, neovim, fzf, fd, ripgrep, xh)
+- **Claude CLI** for AI-powered development assistance and agentic workflows
 - **tmux** for terminal multiplexing
 
 ### Mounted Resources
