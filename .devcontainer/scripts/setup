@@ -2,7 +2,7 @@
 set -euo pipefail
 
 sudo DEBIAN_FRONTEND=noninteractive apt-get update
-sudo DEBIAN_FRONTEND=noninteractive apt-get install -y tmux
+sudo DEBIAN_FRONTEND=noninteractive apt-get install -y tmux ncurses-term
 sudo DEBIAN_FRONTEND=noninteractive rm -rf /var/lib/apt/lists/*
 
 # Install mise packages
