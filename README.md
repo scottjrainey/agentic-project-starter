@@ -1,6 +1,6 @@
 # agentic-project-starter
 
-> Ubuntu based dev container with mise for agentic projects
+> Workbench and tooling for modern agent-first projects
 
 ## Getting Started
 
@@ -18,6 +18,6 @@ This starter provides a fully-configured development container with:
 - **Modern tooling** including Node.js, Python, Bun, Neovim, fzf, ripgrep, and more
 - **Zsh + Oh My Zsh** with autosuggestions
 - **SSH agent forwarding** for seamless git operations
-- **Custom dotfiles** support
+- **Custom dotfiles** support, defaulting to [scottjrainey/dotfiles](https://github.com/scottjrainey/dotfiles)
 
 See [.devcontainer/README.md](.devcontainer/README.md) for complete details and customization options.
