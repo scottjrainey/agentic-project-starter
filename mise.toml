@@ -14,3 +14,44 @@ xh = "latest"
 env_file = '.env'
 experimental = true
 lockfile = true
+
+# [tasks.fe]
+# description = 'Install and run frontend'
+# dir = 'apps/frontend'
+# run = 'npm install && npm run dev'
+
+# [tasks.be]
+# description = 'Install and run backend'
+# dir = 'apps/backend'
+# run = 'uv sync && uv run uvicorn main:app'
+
+# [tasks.reset]
+# description = 'Reset artifacts'
+# run = [
+#     'rm -rf apps/backend/.venv',
+#     'rm -rf apps/backend/starter.db',
+#     'rm -rf apps/frontend/node_modules',
+#     'rm -rf .claude/hooks/*.log',
+#     'rm -rf app_docs/install_results.md',
+#     'rm -rf app_docs/maintenance_results.md',
+# ]
+
+[tasks.cldi]
+description = 'Deterministic codebase setup'
+run = 'claude --model opus --dangerously-skip-permissions --init'
+
+[tasks.cldm]
+description = 'Deterministic codebase maintenance'
+run = 'claude --model opus --dangerously-skip-permissions --maintenance'
+
+[tasks.cldii]
+description = 'Agentic codebase setup'
+run = 'claude --model opus --dangerously-skip-permissions --init "/install"'
+
+[tasks.cldit]
+description = 'Agentic codebase setup interactive'
+run = 'claude --model opus --dangerously-skip-permissions --init "/install true"'
+
+[tasks.cldmm]
+description = 'Agentic codebase maintenance'
+run = 'claude --model opus --dangerously-skip-permissions --maintenance "/maintenance"'
