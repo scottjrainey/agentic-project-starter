@@ -20,7 +20,7 @@ backend = "core:bun"
 "platforms.macos-x64-baseline" = { checksum = "sha256:9812e5f6c7f818ef9c491e05a77481ab2e7a4a1580b378526e1611c102fe7ca3", url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.8/bun-darwin-x64-baseline.zip"}
 
 [[tools.claude]]
-version = "2.1.29"
+version = "2.1.34"
 backend = "npm:@anthropic-ai/claude-code"
 
 [[tools.fd]]
@@ -48,7 +48,7 @@ backend = "core:node"
 "platforms.macos-x64" = { checksum = "sha256:5ea50c9d6dea3dfa3abb66b2656f7a4e1c8cef23432b558d45fb538c7b5dedce", url = "https://nodejs.org/dist/v22.22.0/node-v22.22.0-darwin-x64.tar.gz"}
 
 [[tools.python]]
-version = "3.14.2"
+version = "3.14.3"
 backend = "core:python"
 
 [[tools.ripgrep]]
@@ -60,12 +60,12 @@ backend = "aqua:BurntSushi/ripgrep"
 "platforms.macos-x64" = { checksum = "sha256:64811cb24e77cac3057d6c40b63ac9becf9082eedd54ca411b475b755d334882", url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-apple-darwin.tar.gz"}
 
 [[tools.uv]]
-version = "0.9.28"
+version = "0.10.0"
 backend = "aqua:astral-sh/uv"
-"platforms.linux-arm64" = { checksum = "sha256:eec3249254efac972d2555ff858f8ed20f05b40fbb38ac83b15cf0a2ccc86749", url = "https://github.com/astral-sh/uv/releases/download/0.9.28/uv-aarch64-unknown-linux-musl.tar.gz"}
-"platforms.linux-x64" = { checksum = "sha256:83cd032167b6b97ac94830608efe11159b3d485654e39fdb0bf84718ef236afe", url = "https://github.com/astral-sh/uv/releases/download/0.9.28/uv-x86_64-unknown-linux-musl.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:12163fe09eb292d3ad1ea0f132a84485c902e2ff360d57562bf676e6615fcba0", url = "https://github.com/astral-sh/uv/releases/download/0.9.28/uv-aarch64-apple-darwin.tar.gz"}
-"platforms.macos-x64" = { checksum = "sha256:3a8030881d13b824e5168f5e4d060e715e40753249766bda3d52d6771d93b169", url = "https://github.com/astral-sh/uv/releases/download/0.9.28/uv-x86_64-apple-darwin.tar.gz"}
+"platforms.linux-arm64" = { checksum = "sha256:edf1adb1d183730302f87eef9b71bc4e47b4b8058832c3393b0fbcd86f270510", url = "https://github.com/astral-sh/uv/releases/download/0.10.0/uv-aarch64-unknown-linux-musl.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:312d37f31b6f2c3bfc65668ba0efea9f1f9eaf7bc3209fe1a109e5cf861b95fa", url = "https://github.com/astral-sh/uv/releases/download/0.10.0/uv-x86_64-unknown-linux-musl.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:82d4b99dc6ea686695b5ee142ceba03dd3e3eda2b414e94215ab7bce94972fbb", url = "https://github.com/astral-sh/uv/releases/download/0.10.0/uv-aarch64-apple-darwin.tar.gz"}
+"platforms.macos-x64" = { checksum = "sha256:664aed584c276f8d79cdc3b7685cd48f5d64657bd6840b06b4b2b0db731b9c99", url = "https://github.com/astral-sh/uv/releases/download/0.10.0/uv-x86_64-apple-darwin.tar.gz"}
 
 [[tools.xh]]
 version = "0.25.3"
