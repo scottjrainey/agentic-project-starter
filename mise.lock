@@ -20,7 +20,7 @@ backend = "core:bun"
 "platforms.macos-x64-baseline" = { checksum = "sha256:a6e15821aa60795f541ce18fce16bca9f2a94e193068b77f6f33330f4d0a3ad5", url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.9/bun-darwin-x64-baseline.zip"}
 
 [[tools.claude]]
-version = "2.1.37"
+version = "2.1.38"
 backend = "npm:@anthropic-ai/claude-code"
 
 [[tools.fd]]
@@ -60,12 +60,12 @@ backend = "aqua:BurntSushi/ripgrep"
 "platforms.macos-x64" = { checksum = "sha256:64811cb24e77cac3057d6c40b63ac9becf9082eedd54ca411b475b755d334882", url = "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-apple-darwin.tar.gz"}
 
 [[tools.uv]]
-version = "0.10.0"
+version = "0.10.1"
 backend = "aqua:astral-sh/uv"
-"platforms.linux-arm64" = { checksum = "sha256:edf1adb1d183730302f87eef9b71bc4e47b4b8058832c3393b0fbcd86f270510", url = "https://github.com/astral-sh/uv/releases/download/0.10.0/uv-aarch64-unknown-linux-musl.tar.gz"}
-"platforms.linux-x64" = { checksum = "sha256:312d37f31b6f2c3bfc65668ba0efea9f1f9eaf7bc3209fe1a109e5cf861b95fa", url = "https://github.com/astral-sh/uv/releases/download/0.10.0/uv-x86_64-unknown-linux-musl.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:82d4b99dc6ea686695b5ee142ceba03dd3e3eda2b414e94215ab7bce94972fbb", url = "https://github.com/astral-sh/uv/releases/download/0.10.0/uv-aarch64-apple-darwin.tar.gz"}
-"platforms.macos-x64" = { checksum = "sha256:664aed584c276f8d79cdc3b7685cd48f5d64657bd6840b06b4b2b0db731b9c99", url = "https://github.com/astral-sh/uv/releases/download/0.10.0/uv-x86_64-apple-darwin.tar.gz"}
+"platforms.linux-arm64" = { checksum = "sha256:ae9ae536be5b4d1cf7a6560d52a20711f267e7b21e23ee6cc538a4afa236b757", url = "https://github.com/astral-sh/uv/releases/download/0.10.1/uv-aarch64-unknown-linux-musl.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:d1a3b08dd9abf9e500541cadd0e2f4b144c99b9265fb00e500c2b5c82a3b4ee8", url = "https://github.com/astral-sh/uv/releases/download/0.10.1/uv-x86_64-unknown-linux-musl.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:37c101cd8a745a43d69bc3832c41866ab721467a1d58881f57b73b705abc2851", url = "https://github.com/astral-sh/uv/releases/download/0.10.1/uv-aarch64-apple-darwin.tar.gz"}
+"platforms.macos-x64" = { checksum = "sha256:f61f1122193698a53fc2d4cc6fb5a5849b283817509778ac8f1a7d2a36a218de", url = "https://github.com/astral-sh/uv/releases/download/0.10.1/uv-x86_64-apple-darwin.tar.gz"}
 
 [[tools.xh]]
 version = "0.25.3"
