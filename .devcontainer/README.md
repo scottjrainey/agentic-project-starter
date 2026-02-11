@@ -8,8 +8,7 @@ This devcontainer provides a fully-configured Ubuntu 24.04 development environme
 
 - **Ubuntu 24.04** with Docker-in-Docker support
 - **Zsh** as default shell with Oh My Zsh and autosuggestions
-- **mise** for tool version management (bun, node, python, uv, claude, neovim, fzf, fd, ripgrep, xh)
-- **Claude CLI** for AI-powered development assistance and agentic workflows
+- **mise** for tool version management (bun, python, uv, wrangler, etc.)
 - **tmux** for terminal multiplexing
 
 ### Mounted Resources
@@ -37,7 +36,7 @@ Override the dotfiles repository by setting environment variables before contain
 ```bash
 export DEVCONTAINER_DOTFILES_REPO="git@github.com:yourusername/your-dotfiles.git"
 export DEVCONTAINER_DOTFILES_TARGET="$HOME/.dotfiles"
-export DEVCONTAINER_DOTFILES_INSTALL="$HOME/.dotfiles/install.sh"
+export DEVCONTAINER_DOTFILES_INSTALL="$HOME/.dotfiles/scripts/install.sh"
 ```
 
 ### VSCode Extensions

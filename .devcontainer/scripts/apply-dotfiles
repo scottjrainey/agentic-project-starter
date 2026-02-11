@@ -4,7 +4,7 @@ set -euo pipefail
 # Default values – override via env if you want
 : "${DEVCONTAINER_DOTFILES_REPO:=git@github.com:scottjrainey/dotfiles.git}"
 : "${DEVCONTAINER_DOTFILES_TARGET:=$HOME/.dotfiles}"
-: "${DEVCONTAINER_DOTFILES_INSTALL:=$DEVCONTAINER_DOTFILES_TARGET/install.sh}"
+: "${DEVCONTAINER_DOTFILES_INSTALL:=$DEVCONTAINER_DOTFILES_TARGET/scripts/install.sh}"
 
 echo "Applying dotfiles from: $DEVCONTAINER_DOTFILES_REPO"
 
