@@ -20,7 +20,7 @@ backend = "core:bun"
 "platforms.macos-x64-baseline" = { checksum = "sha256:a6e15821aa60795f541ce18fce16bca9f2a94e193068b77f6f33330f4d0a3ad5", url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.9/bun-darwin-x64-baseline.zip"}
 
 [[tools.claude]]
-version = "2.1.39"
+version = "2.1.41"
 backend = "npm:@anthropic-ai/claude-code"
 
 [[tools.fd]]
