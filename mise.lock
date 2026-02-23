@@ -20,7 +20,7 @@ backend = "core:bun"
 "platforms.macos-x64-baseline" = { checksum = "sha256:a6e15821aa60795f541ce18fce16bca9f2a94e193068b77f6f33330f4d0a3ad5", url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.9/bun-darwin-x64-baseline.zip"}
 
 [[tools.claude]]
-version = "2.1.49"
+version = "2.1.50"
 backend = "npm:@anthropic-ai/claude-code"
 
 [[tools.fd]]
@@ -34,6 +34,9 @@ backend = "aqua:sharkdp/fd"
 [[tools.fzf]]
 version = "0.68.0"
 backend = "aqua:junegunn/fzf"
+"platforms.linux-arm64" = { checksum = "sha256:dad9cc3b617305d504dbbf8812c4c9970a6dc7efdce9b5eacbd130d1f1dbc05d", url = "https://github.com/junegunn/fzf/releases/download/v0.68.0/fzf-0.68.0-linux_arm64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:545004a69eb65bb9adf32000971105ac21aea54bbecb618c55414d21b823fe95", url = "https://github.com/junegunn/fzf/releases/download/v0.68.0/fzf-0.68.0-linux_amd64.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:1817524989b3987ebc67d16acbc5526cb51dfbc52ca62babe37c96d9d09a227b", url = "https://github.com/junegunn/fzf/releases/download/v0.68.0/fzf-0.68.0-darwin_arm64.tar.gz"}
 "platforms.macos-x64" = { checksum = "sha256:da3aafc569bdd38c7cb30f992c54c4899c935d8b86b88c2a6831b0733b862caf", url = "https://github.com/junegunn/fzf/releases/download/v0.68.0/fzf-0.68.0-darwin_amd64.tar.gz"}
 
 [[tools.node]]
