@@ -20,7 +20,7 @@ backend = "core:bun"
 "platforms.macos-x64-baseline" = { checksum = "sha256:f9686c4e4e760db4cde77a0f1fad05e552648b9c9cbfa4f7fc9a7ec26b9f3267", url = "https://github.com/oven-sh/bun/releases/download/bun-v1.3.10/bun-darwin-x64-baseline.zip"}
 
 [[tools.claude]]
-version = "2.1.69"
+version = "2.1.70"
 backend = "npm:@anthropic-ai/claude-code"
 
 [[tools.fd]]
@@ -40,12 +40,12 @@ backend = "aqua:junegunn/fzf"
 "platforms.macos-x64" = { checksum = "sha256:46af74cfeb171c5e2eb936096a653061a0de0f5aeb70319bf9935d8d193e078f", url = "https://github.com/junegunn/fzf/releases/download/v0.70.0/fzf-0.70.0-darwin_amd64.tar.gz"}
 
 [[tools.node]]
-version = "22.22.0"
+version = "22.22.1"
 backend = "core:node"
-"platforms.linux-arm64" = { checksum = "sha256:25ba95dfb96871fa2ef977f11f95ea90818c8fa15c0f2110771db08d4ba423be", url = "https://nodejs.org/dist/v22.22.0/node-v22.22.0-linux-arm64.tar.gz"}
-"platforms.linux-x64" = { checksum = "sha256:c33c39ed9c80deddde77c960d00119918b9e352426fd604ba41638d6526a4744", url = "https://nodejs.org/dist/v22.22.0/node-v22.22.0-linux-x64.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:5ed4db0fcf1eaf84d91ad12462631d73bf4576c1377e192d222e48026a902640", url = "https://nodejs.org/dist/v22.22.0/node-v22.22.0-darwin-arm64.tar.gz"}
-"platforms.macos-x64" = { checksum = "sha256:5ea50c9d6dea3dfa3abb66b2656f7a4e1c8cef23432b558d45fb538c7b5dedce", url = "https://nodejs.org/dist/v22.22.0/node-v22.22.0-darwin-x64.tar.gz"}
+"platforms.linux-arm64" = { checksum = "sha256:1d1690e9aba47e887a275abc6d8f7317e571a0700deaef493f768377e99155f5", url = "https://nodejs.org/dist/v22.22.1/node-v22.22.1-linux-arm64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:07c8aafa60644fb81adefa1ee7da860eb1920851ffdc9a37020ab0be47fbc10e", url = "https://nodejs.org/dist/v22.22.1/node-v22.22.1-linux-x64.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:679ad4966339e4ef4900f57996714864e4211b898825bb840c3086c419fbcef2", url = "https://nodejs.org/dist/v22.22.1/node-v22.22.1-darwin-arm64.tar.gz"}
+"platforms.macos-x64" = { checksum = "sha256:07b13722d558790fca20bb1ecf61bde24b7a4863111f7be77fc57251a407359a", url = "https://nodejs.org/dist/v22.22.1/node-v22.22.1-darwin-x64.tar.gz"}
 
 [[tools.python]]
 version = "3.14.3"
