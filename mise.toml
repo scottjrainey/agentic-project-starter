@@ -6,7 +6,7 @@ python = "3.14"
 uv = "latest"
 "aqua:neovim/neovim" = "latest"
 fzf = "latest"
-fd = "latest"
+fd = "10.3.0"
 ripgrep = "latest"
 xh = "latest"
 
