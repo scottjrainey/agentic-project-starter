@@ -50,6 +50,7 @@ backend = "core:node"
 [[tools.python]]
 version = "3.14.3"
 backend = "core:python"
+"platforms.macos-x64" = { checksum = "sha256:76f1cc26e3d262eae8ca546a93e8bded10cf0323613f7e246fea2e10a8115eb7", url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260303/cpython-3.14.3+20260303-x86_64-apple-darwin-install_only_stripped.tar.gz"}
 
 [tools.python.options]
 compile = "true"
@@ -57,6 +58,13 @@ compile = "true"
 [[tools.python]]
 version = "3.14.3"
 backend = "core:python"
+<<<<<<< Updated upstream
+||||||| Stash base
+=======
+"platforms.linux-arm64" = { checksum = "sha256:be0f4dc2932f762292b27d46ea7d3e8e66ddf3969a5eb0254a229015ed402625", url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260303/cpython-3.14.3+20260303-aarch64-unknown-linux-gnu-install_only_stripped.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:0a73413f89efd417871876c9accaab28a9d1e3cd6358fbfff171a38ec99302f0", url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260303/cpython-3.14.3+20260303-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:4703cdf18b26798fde7b49b6b66149674c25f97127be6a10dbcf29309bdcdcdb", url = "https://github.com/astral-sh/python-build-standalone/releases/download/20260303/cpython-3.14.3+20260303-aarch64-apple-darwin-install_only_stripped.tar.gz"}
+>>>>>>> Stashed changes
 
 [[tools.ripgrep]]
 version = "15.1.0"

@@ -21,3 +21,17 @@ This starter provides a fully-configured development container with:
 - **Custom dotfiles** support, defaulting to [scottjrainey/dotfiles](https://github.com/scottjrainey/dotfiles)
 
 See [.devcontainer/README.md](.devcontainer/README.md) for complete details and customization options.
+
+## Spec-Driven Development with OpenSpec
+
+[OpenSpec](https://github.com/Fission-AI/OpenSpec) is a spec-driven workflow layer that keeps changes traceable from intent through implementation. Specs and change artifacts live in `openspec/` and are consumed by Claude Code via pre-baked skills and commands — no installation required.
+
+**Entry points:**
+- `/opsx:new` — start a new change
+- `/opsx:onboard` — guided walkthrough of the workflow
+
+**Upgrading the scaffold:** To regenerate OpenSpec skills and commands after an upstream release, run from the repo root and commit the result:
+
+```sh
+npx @fission-ai/openspec init --tools claude --force
+```
