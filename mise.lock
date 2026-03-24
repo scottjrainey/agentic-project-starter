@@ -82,12 +82,12 @@ backend = "aqua:jesseduffield/lazygit"
 "platforms.macos-x64" = { checksum = "sha256:9210a8bd8bf18537f9d7747361c8eba62518e10e4d5fbfe915cf110635eaab78", url = "https://github.com/jesseduffield/lazygit/releases/download/v0.60.0/lazygit_0.60.0_darwin_x86_64.tar.gz"}
 
 [[tools.node]]
-version = "22.22.1"
+version = "22.22.2"
 backend = "core:node"
-"platforms.linux-arm64" = { checksum = "sha256:1d1690e9aba47e887a275abc6d8f7317e571a0700deaef493f768377e99155f5", url = "https://nodejs.org/dist/v22.22.1/node-v22.22.1-linux-arm64.tar.gz"}
-"platforms.linux-x64" = { checksum = "sha256:07c8aafa60644fb81adefa1ee7da860eb1920851ffdc9a37020ab0be47fbc10e", url = "https://nodejs.org/dist/v22.22.1/node-v22.22.1-linux-x64.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:679ad4966339e4ef4900f57996714864e4211b898825bb840c3086c419fbcef2", url = "https://nodejs.org/dist/v22.22.1/node-v22.22.1-darwin-arm64.tar.gz"}
-"platforms.macos-x64" = { checksum = "sha256:07b13722d558790fca20bb1ecf61bde24b7a4863111f7be77fc57251a407359a", url = "https://nodejs.org/dist/v22.22.1/node-v22.22.1-darwin-x64.tar.gz"}
+"platforms.linux-arm64" = { checksum = "sha256:b2f3a96f31486bfc365192ad65ced14833ad2a3c2e1bcefec4846902f264fa28", url = "https://nodejs.org/dist/v22.22.2/node-v22.22.2-linux-arm64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:978978a635eef872fa68beae09f0aad0bbbae6757e444da80b570964a97e62a3", url = "https://nodejs.org/dist/v22.22.2/node-v22.22.2-linux-x64.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:db4b275b83736df67533529a18cc55de2549a8329ace6c7bcc68f8d22d3c9000", url = "https://nodejs.org/dist/v22.22.2/node-v22.22.2-darwin-arm64.tar.gz"}
+"platforms.macos-x64" = { checksum = "sha256:12a6abb9c2902cf48a21120da13f87fde1ed1b71a13330712949e8db818708ba", url = "https://nodejs.org/dist/v22.22.2/node-v22.22.2-darwin-x64.tar.gz"}
 
 [[tools.python]]
 version = "3.12.13"
@@ -119,12 +119,12 @@ backend = "aqua:starship/starship"
 "platforms.macos-x64" = { checksum = "sha256:237beb10cc970c4361536e9f9f434dfed755f8282c5cd951b6a7e3fcbda8e779", url = "https://github.com/starship/starship/releases/download/v1.24.2/starship-x86_64-apple-darwin.tar.gz"}
 
 [[tools.uv]]
-version = "0.10.12"
+version = "0.11.0"
 backend = "aqua:astral-sh/uv"
-"platforms.linux-arm64" = { checksum = "sha256:55bd1c1c10ec8b95a8c184f5e18b566703c6ab105f0fc118aaa4d748aabf28e4", url = "https://github.com/astral-sh/uv/releases/download/0.10.12/uv-aarch64-unknown-linux-musl.tar.gz"}
-"platforms.linux-x64" = { checksum = "sha256:adccf40b5d1939a5e0093081ec2307ea24235adf7c2d96b122c561fa37711c46", url = "https://github.com/astral-sh/uv/releases/download/0.10.12/uv-x86_64-unknown-linux-musl.tar.gz"}
-"platforms.macos-arm64" = { checksum = "sha256:ae738b5661a900579ec621d3918c0ef17bdec0da2a8a6d8b161137cd15f25414", url = "https://github.com/astral-sh/uv/releases/download/0.10.12/uv-aarch64-apple-darwin.tar.gz"}
-"platforms.macos-x64" = { checksum = "sha256:17443e293f2ae407bb2d8d34b875ebfe0ae01cf1296de5647e69e7b2e2b428f0", url = "https://github.com/astral-sh/uv/releases/download/0.10.12/uv-x86_64-apple-darwin.tar.gz"}
+"platforms.linux-arm64" = { checksum = "sha256:658be4b8ec905635f1295468d4d5120d9e1ab1722eec9a104473ce993590babe", url = "https://github.com/astral-sh/uv/releases/download/0.11.0/uv-aarch64-unknown-linux-musl.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:bf6b0757c73d1726faa2a819b155d4d864919a95766720215d78fdcd09d42d26", url = "https://github.com/astral-sh/uv/releases/download/0.11.0/uv-x86_64-unknown-linux-musl.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:0c0f32c6a3473c5928aff96c3233715edfc79290e892f255cac93710cde7b91a", url = "https://github.com/astral-sh/uv/releases/download/0.11.0/uv-aarch64-apple-darwin.tar.gz"}
+"platforms.macos-x64" = { checksum = "sha256:31aaec764166af8885cf99321fd6ed24fef80225a6f26ed1ae8ce04111688a7e", url = "https://github.com/astral-sh/uv/releases/download/0.11.0/uv-x86_64-apple-darwin.tar.gz"}
 
 [[tools.wrangler]]
 version = "4.71.0"
